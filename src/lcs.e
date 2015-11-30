@@ -1,6 +1,6 @@
 note
 	description: "[
-			Enter class description here!
+			Longest Common Subsequence.
 		]"
 
 class
@@ -14,6 +14,9 @@ inherit
 
 create
 	make
+	
+convert
+	value: {READABLE_STRING_32,STRING_32}
 
 feature {NONE} -- Initialization
 
@@ -31,7 +34,8 @@ feature {NONE} -- Initialization
 feature -- Access
 
 	value: STRING_32
-
+			-- Longest Common Subsequence value.
+	
 feature {NONE} -- Implementation
 
 	x,y: READABLE_STRING_GENERAL
@@ -171,4 +175,10 @@ feature {NONE} -- Implementation
 			end
 		end
 
+note
+	copyright: "2015-2015, Jocelyn Fiat, and Eiffel Software."
+	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
+	source: "[
+			Author: eiffel@djoce.net
+		]"
 end

@@ -60,4 +60,10 @@ feature {NONE} -- Initialization
 			print ("%N")
 		end
 
+note
+	copyright: "2015-2015, Jocelyn Fiat"
+	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
+	source: "[
+			Author: eiffel@djoce.net
+		]"
 end

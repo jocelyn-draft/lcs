@@ -42,6 +42,12 @@ feature -- Test routines
 			assert_32 (l_tag, a_result.same_string (lcs.value))
 		end
 
+note
+	copyright: "2015-2015, Jocelyn Fiat"
+	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
+	source: "[
+			Author: eiffel@djoce.net
+		]"
 end
 
 
