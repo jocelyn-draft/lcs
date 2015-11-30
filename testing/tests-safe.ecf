@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-15-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-15-0 http://www.eiffel.com/developers/xml/configuration-1-15-0.xsd" name="lcs_tests" uuid="F1082A83-C442-4A78-B0AF-81DE8CDBEB48">
-	<target name="lcs_tests">
-		<root class="LCS_APPLICATION" feature="make"/>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-15-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-15-0 http://www.eiffel.com/developers/xml/configuration-1-15-0.xsd" name="string_utilities_tests" uuid="F1082A83-C442-4A78-B0AF-81DE8CDBEB48">
+	<target name="string_utilities_tests">
+		<root class="APPLICATION" feature="make"/>
 		<file_rule>
 			<exclude>/.git$</exclude>
 			<exclude>/EIFGENs$</exclude>
@@ -12,7 +12,7 @@
 		</option>
 		<library name="base" location="$ISE_LIBRARY\library\base\base-safe.ecf"/>
 		<library name="encoding" location="$ISE_LIBRARY\library\encoding\encoding-safe.ecf"/>
-		<library name="lcs" location="..\lcs-safe.ecf"/>
+		<library name="string_utilities" location="..\string_utilities-safe.ecf" readonly="false"/>
 		<library name="testing" location="$ISE_LIBRARY\library\testing\testing-safe.ecf"/>
 		<tests name="tests" location=".\"/>
 	</target>

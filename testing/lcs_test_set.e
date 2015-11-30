@@ -27,25 +27,25 @@ feature -- Test routines
 
 	test_lcs (a,b: READABLE_STRING_GENERAL; a_result: READABLE_STRING_GENERAL)
 		local
-			lcs: LCS
+			ut: expanded LCS_UTILITIES
 			l_tag: STRING_32
 		do
-			create lcs.make (a, b)
 			create l_tag.make_empty
 			l_tag.append ("LCS(%"")
 			l_tag.append_string_general (a)
 			l_tag.append ("%",%"")
 			l_tag.append_string_general (b)
-			l_tag.append ("%"=%"")
+			l_tag.append ("%")=%"")
 			l_tag.append_string_general (a_result)
 			l_tag.append ("%"")
-			assert_32 (l_tag, a_result.same_string (lcs.value))
+			assert_32 (l_tag, a_result.same_string (ut.lcs (a, b)))
 		end
 
 note
-	copyright: "2015-2015, Jocelyn Fiat"
+	copyright: "2015-2015, Jocelyn Fiat, and others"
 	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
 	source: "[
+			https://eiffel.org/
 			Author: eiffel@djoce.net
 		]"
 end

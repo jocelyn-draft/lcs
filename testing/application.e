@@ -4,7 +4,7 @@
 		]"
 
 class
-	LCS_APPLICATION
+	APPLICATION
 
 inherit
 	ANY
@@ -44,26 +44,26 @@ feature {NONE} -- Initialization
 
 	display_lcs (x,y: READABLE_STRING_GENERAL)
 		local
-			lcs: LCS
+			lcs: expanded LCS_UTILITIES
 			s: STRING_32
 		do
-			create lcs.make (x, y)
 			create s.make_empty
 			s.append ("LCS(%"")
 			s.append_string_general (x)
 			s.append ("%", %"")
 			s.append_string_general (y)
 			s.append ("%") = %"")
-			s.append_string_general (lcs.value)
+			s.append_string_general (lcs.lcs (x, y))
 			s.append ("%"")
 			print (s)
 			print ("%N")
 		end
 
 note
-	copyright: "2015-2015, Jocelyn Fiat"
+	copyright: "2015-2015, Jocelyn Fiat, and others"
 	license: "Eiffel Forum License v2 (see http://www.eiffel.com/licensing/forum.txt)"
 	source: "[
+			https://eiffel.org/
 			Author: eiffel@djoce.net
 		]"
 end
